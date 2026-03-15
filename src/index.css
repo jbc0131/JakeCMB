@@ -1,0 +1,47 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0e14;
+  --bg-card: #111720;
+  --bg-elevated: #161d28;
+  --border: rgba(99, 179, 237, 0.12);
+  --border-hover: rgba(99, 179, 237, 0.28);
+  --accent: #63b3ed;
+  --accent-soft: rgba(99, 179, 237, 0.15);
+  --accent-glow: rgba(99, 179, 237, 0.08);
+  --green: #68d391;
+  --green-soft: rgba(104, 211, 145, 0.15);
+  --amber: #f6ad55;
+  --amber-soft: rgba(246, 173, 85, 0.15);
+  --red: #fc8181;
+  --red-soft: rgba(252, 129, 129, 0.15);
+  --text-primary: #e8edf5;
+  --text-secondary: #7a90aa;
+  --text-muted: #4a5d72;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font-family: var(--font-body); cursor: pointer; }
+input, textarea, select { font-family: var(--font-body); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 3px; }
+
+::selection { background: var(--accent-soft); }
