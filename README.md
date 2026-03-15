@@ -132,4 +132,4 @@ Some ideas for future additions:
 
 - Node.js 18+
 - An Anthropic API key ([console.anthropic.com](https://console.anthropic.com))
-- A Vercel account (free tier works fine)  dsafasdfas
+- A Vercel account (free tier works fine)
