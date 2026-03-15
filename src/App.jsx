@@ -2,6 +2,7 @@ import { useState } from 'react'
 import NotesInput from './components/NotesInput'
 import Flashcards from './components/Flashcards'
 import Quiz from './components/Quiz'
+import DebugPanel from './components/DebugPanel'
 import { generateStudySet } from './lib/api'
 import styles from './App.module.css'
 
@@ -68,7 +69,10 @@ export default function App() {
 
         <div className={styles.content}>
           {tab === 'Notes' && (
-            <NotesInput onGenerate={handleGenerate} loading={loading} />
+            <>
+              <NotesInput onGenerate={handleGenerate} loading={loading} />
+              <DebugPanel />
+            </>
           )}
           {tab === 'Flashcards' && (
             flashcards.length > 0
