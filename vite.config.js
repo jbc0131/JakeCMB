@@ -5,5 +5,13 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     exclude: ['pdfjs-dist']
+  },
+  build: {
+    rollupOptions: {
+      external: [],
+    }
+  },
+  worker: {
+    format: 'es'
   }
 })

@@ -32,10 +32,35 @@
   cursor: not-allowed;
 }
 
-.fileName {
+.fileStatus {
   font-size: 12px;
-  color: var(--text-secondary);
   font-family: var(--font-mono);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  line-height: 1.5;
+}
+
+.fileStatus_loading {
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+}
+
+.fileStatus_ok {
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+.fileStatus_error {
+  color: var(--red);
+  background: var(--red-soft);
+}
+
+.charCount {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--green);
+  text-align: right;
+  margin-top: -6px;
 }
 
 .divider {
